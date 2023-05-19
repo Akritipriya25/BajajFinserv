@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developers Directory</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <h1>Developers Directory</h1>
+
+  <div>
+    <label for="searchName">Search by name:</label>
+    <input type="text" id="searchName" />
+  </div>
+
+  <div>
+    <label for="filterDesignation">Filter by designation:</label>
+    <select id="filterDesignation">
+      <option value="">All</option>
+      <option value="Developer">Developer</option>
+      <option value="Designer">Designer</option>
+      <option value="Manager">Manager</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="filterSkills">Filter by skills:</label>
+    <select multiple id="filterSkills">
+      <option value="HTML/CSS">HTML/CSS</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="React.js">React.js</option>
+      <option value="Node.js">Node.js</option>
+    </select>
+  </div>
+
+  <ul id="developerList"></ul>
+  <script src="app.js"></script>
